@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.big_container{
+    background-color: rgb(230, 230, 230);
+    width: 128rem;
+    height: 64rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculator-frame{
+    /* border: .1rem solid black; */
+    background-color: rgb(238, 238, 238);
+    width: 80rem;
+    height: 40rem;
+    box-shadow: .5rem .5rem 1.5rem .5rem rgba(194, 194, 194, 0.9),
+                -.8rem -.8rem 2rem 1rem rgba(255, 255, 255, 0.863);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75rem;
+    height: 7rem;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: inset .5rem .5rem 1rem 0rem rgba(177, 177, 177, 0.884),
+                inset -.5rem -.5rem 1rem 1rem rgb(255, 255, 255);
+                
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 1.5rem;
+}
+.lower{
+    /* border: .1rem solid black; */
+    margin-top: 4rem;
+}
+button,.button{
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 5rem;
+    padding: .7rem 5rem;
+    text-align: left;
+    font-size: 2rem;
+    border-radius: .4rem;
+    box-shadow: .3rem .3rem .5rem 0rem rgb(203, 203, 203),
+                -.5rem -.5rem 1rem 0rem rgb(255, 255, 255);
+    background-image: linear-gradient(to top,rgb(232, 232, 232),white);
+    /* user-select: none; */
+}
+button:active{
+    background-image: linear-gradient(to top,white,rgb(232, 232, 232));    
+}
+.button:active{
+    background-image: linear-gradient(to top,white,rgb(232, 232, 232));    
+}
+.pink{
+    background-image: none;
+    background-color: rgb(250, 81, 109);
+    color: white;
+}
+.green{
+    background-image: none;
+    background-color: rgb(0, 164, 0);
+    color: white;
+}
+.blue{
+    background-image: none;
+    background-color: rgb(0, 170, 255);
+    color: white;
+}
+.pink:active{
+    background-image: none;
+    background-color: rgb(161, 16, 41);
+}
+.green:active{
+    background-image: none;
+    background-color: green;
+}
+.blue:active{
+    background-image: none;
+    background-color: rgb(0, 106, 198);
+}
+
+.text{
+    font-size: 4.5rem;
+    margin-right: 2rem;
+}
