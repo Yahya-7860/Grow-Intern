@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dc54593ae1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="big_container">
+        <div class="container">
+
+            <div class="left">
+                <div class="html_part">
+                    <div class="heading">
+                        <i class="fa-brands fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                    <textarea onkeyup="run()" id="html_text"></textarea>
+                </div>
+                <div class="css_part">
+                    <div class="heading">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+                    <textarea onkeyup="run()" id="css_text"></textarea>
+                </div>
+                <div class="js_part">
+                    <div class="heading">
+                        <i class="fa-brands fa-js"></i>
+                        <span>JS</span>
+                    </div>
+                    <textarea onkeyup="run()" id="js_text"></textarea>
+                </div>
+            </div>
+            <div class="right">
+
+                <div class="heading2">
+                    <span class="new_span">Output</span>
+                </div>
+                <iframe class="iframe"></iframe>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        function run(){
+            let html=document.querySelector("#html_text").value;
+            let css=document.querySelector("#css_text").value;
+            let js=document.querySelector("#js_text").value;
+            let a=document.getElementByIdb
+            console.log("hello");
+            let output=document.querySelector(".iframe");
+            output.contentDocument.body.innerHTML=html+"<style>"+css+"</style>";
+            output.contentWindow.eval(js);
+        }
+
+    </script>
+</body>
+</html>
